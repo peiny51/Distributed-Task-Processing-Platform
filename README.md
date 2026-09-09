@@ -12,7 +12,7 @@ A backend task processing system built with Java and Spring Boot. The platform s
 - Maven
 
 ## Architecture
-
+```text
 Client
   ↓
 Spring Boot REST API
@@ -26,7 +26,7 @@ Redis Queue
 Task Worker
   ↓
 Task Processing / Result
-
+```
 PostgreSQL is used as the source of truth for task state, while Redis provides asynchronous task distribution.
 
 ## Features
