@@ -14,23 +14,17 @@ A backend task processing system built with Java and Spring Boot. The platform s
 ## Architecture
 
 Client
-  |
-  v
+  ↓
 Spring Boot REST API
-  |
-  v
+  ↓
 PostgreSQL
-  |
-  v
+  ↓
 Transactional Outbox
-  |
-  v
+  ↓
 Redis Queue
-  |
-  v
+  ↓
 Task Worker
-  |
-  v
+  ↓
 Task Processing / Result
 
 PostgreSQL is used as the source of truth for task state, while Redis provides asynchronous task distribution.
